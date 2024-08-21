@@ -1,9 +1,8 @@
 import Banner from "@/components/Banner";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mx-auto mt-16 min-h-screen max-w-screen-xl">
+    <div className="mx-auto min-h-screen max-w-screen-xl">
       <Banner />
     </div>
   );

@@ -1,20 +1,33 @@
 import NavigateBtn from "./NavigateBtn";
+import SocialBtn from "./SocialBtn";
+import linkedinIcon from "../images/linkedinIcon.svg";
+import emailIcon from "../images/emailIcon.svg";
+import githubIcon from "../images/githubIcon.svg";
 
 export default function Banner() {
   return (
-    <div className="w-1/2">
+    <div className="h-screen w-1/2 p-24">
       <h1 className="whitespace-nowrap text-5xl font-bold">
         Daniel Canales Taylor
       </h1>
-      <h2 className="text-3xl font-bold opacity-80">Junior Web Developer</h2>
-      <p className="text-sm opacity-60">
+      <h2 className="text-3xl font-bold text-sky-500">Web Developer</h2>
+      <p className="whitespace-nowrap text-base text-gray-100">
         “La perfección no es alcanzable, pero en su búsqueda podemos toparnos
-        con la excelencia”, Vince Lombardi.
+        con la excelencia”
+        <br /> Vince Lombardi.
       </p>
       <div className="mt-24 flex max-w-fit flex-col gap-y-2.5">
         <NavigateBtn btnName={"ACERCA"} />
         <NavigateBtn btnName={"TECNOLOGÍAS"} />
         <NavigateBtn btnName={"PROYECTOS"} />
+      </div>
+      <div>
+        <SocialBtn
+          icon={linkedinIcon}
+          link={"https://www.linkedin.com/in/daniel-canales-taylor-49466b285/"}
+        />
+        <SocialBtn icon={emailIcon} />
+        <SocialBtn icon={githubIcon} link={"https://github.com/kais3r2023"} />
       </div>
     </div>
   );
