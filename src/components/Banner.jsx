@@ -6,12 +6,14 @@ import githubIcon from "../images/githubIcon.svg";
 
 export default function Banner() {
   return (
-    <div className="relative h-screen w-1/2 p-24">
+    <div className="h-96 w-full">
       <h1 className="whitespace-nowrap text-5xl font-bold">
         Daniel Canales Taylor
       </h1>
-      <h2 className="text-3xl font-bold text-sky-500">Web Developer</h2>
-      <p className="whitespace-nowrap text-base text-gray-100">
+      <h2 className="mt-4 w-fit whitespace-nowrap text-3xl font-bold text-sky-500">
+        Web Developer
+      </h2>
+      <p className="mt-2 whitespace-nowrap text-base text-gray-100">
         “La perfección no es alcanzable, <br />
         pero en su búsqueda podemos toparnos con la excelencia”
         <br /> Vince Lombardi.
@@ -21,7 +23,7 @@ export default function Banner() {
         <NavigateBtn btnName={"TECNOLOGÍAS"} />
         <NavigateBtn btnName={"PROYECTOS"} />
       </div>
-      <div className="absolute bottom-0 mb-9 flex w-60 flex-row justify-between">
+      <div className="absolute bottom-11 flex w-60 flex-row justify-between">
         <SocialBtn
           icon={linkedinIcon}
           link={"https://www.linkedin.com/in/daniel-canales-taylor-49466b285/"}
