@@ -1,8 +1,11 @@
 import NavigateBtn from "./NavigateBtn";
 import SocialBtn from "./SocialBtn";
 import linkedinIcon from "../images/linkedinIcon.svg";
+import linkedinIconHover from "../images/linkedinIconhover.svg";
 import emailIcon from "../images/emailIcon.svg";
+import emailIconHover from "../images/emailIconHover.svg";
 import githubIcon from "../images/githubIcon.svg";
+import githubIconHover from "../images/githubIconHover.svg";
 
 export default function Banner() {
   return (
@@ -13,7 +16,7 @@ export default function Banner() {
       <h2 className="mt-4 w-fit whitespace-nowrap text-3xl font-bold text-sky-500">
         Web Developer
       </h2>
-      <p className="mt-2 whitespace-nowrap text-base text-gray-100">
+      <p className="mt-2 whitespace-nowrap text-xl text-gray-100">
         “La perfección no es alcanzable, <br />
         pero en su búsqueda podemos toparnos con la excelencia”
         <br /> Vince Lombardi.
@@ -27,13 +30,19 @@ export default function Banner() {
         <SocialBtn
           icon={linkedinIcon}
           link={"https://www.linkedin.com/in/daniel-canales-taylor-49466b285/"}
+          hoverIcon={linkedinIconHover}
         />
-        <SocialBtn icon={githubIcon} link={"https://github.com/kais3r2023"} />
+        <SocialBtn
+          icon={githubIcon}
+          link={"https://github.com/kais3r2023"}
+          hoverIcon={githubIconHover}
+        />
         <SocialBtn
           icon={emailIcon}
           link={
             "mailto:danielcanalestaylor88@gmail.com?subject=Me%20interesa%20Contactarte%20como%20Desarrollador"
           }
+          hoverIcon={emailIconHover}
         />
       </div>
     </div>

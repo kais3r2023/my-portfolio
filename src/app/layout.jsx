@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex h-fit flex-col items-center bg-gray-950`}
+        className={`${inter.className} flex h-fit flex-col items-center bg-blue-950`}
       >
         {children}
       </body>
